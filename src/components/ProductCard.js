@@ -34,24 +34,3 @@
 // }
 
 // export default ProductCard;
-
-// function ProductCard({ product }) {
-//   return (
-//     <div className="card">
-//       <div className="info">
-//         <h2>{product.title}</h2>
-//         <p>{product.body}</p>
-//       </div>
-//       <style jsx>{`
-//         .card {
-//           border: 1px solid #ccc;
-//           padding: 10px;
-//           margin: 10px;
-//           text-align: center;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }
-
-// export default ProductCard;

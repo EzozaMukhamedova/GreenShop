@@ -1,40 +1,3 @@
-// import Image from "next/image";
-
-// function ProductCard({ product }) {
-//   return (
-//     <div className="card">
-//       <div className="image">
-//         <Image
-//           src={product.image}
-//           alt={product.name}
-//           width={100}
-//           height={100}
-//         />
-//       </div>
-//       <div className="info">
-//         <p>{product.name}</p>
-//         <p>
-//           {product.price} <span className="old-price">{product.oldPrice}</span>
-//         </p>
-//         <p>{product.discount}</p>
-//       </div>
-//       <style jsx>{`
-//         .card {
-//           border: 1px solid #ccc;
-//           padding: 10px;
-//           margin: 10px;
-//           text-align: center;
-//         }
-//         .old-price {
-//           text-decoration: line-through;
-//         }
-//       `}</style>
-//     </div>
-//   );
-// }
-
-// export default ProductCard;
-
 import Image from "next/image";
 import Link from "next/link";
 
@@ -48,7 +11,7 @@ export default async function Card() {
         {posts?.map((post, index) => {
           return (
             <div key={index}>
-              <Link href={`/dashboard/about/posts/${post?.id}`}>
+              <Link href={`/dashboard/posts/${post?.id}`}>
                 <div className="mt-[30px] h-[400px] w-[250px] max-sm:grid-cols-2">
                   <div className="">
                     <div className="group h-[300px] w-[250px] bg-[#f5f5f5] flex justify-center items-center relative">
