@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 export default function Navbar() {
   return (
     <>
@@ -18,7 +19,7 @@ export default function Navbar() {
             <a href="/">Home</a>
           </h3>
           <h3 className="cursor-pointer">
-            <a href="/blog">Blog</a>
+            <Link href="/dashboard/blog">Blog</Link>
           </h3>
         </div>
         <div className="justify-end flex gap-8">
